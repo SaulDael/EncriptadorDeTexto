@@ -1,0 +1,319 @@
+* {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body {
+    background-image: url(images/spider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.logo {
+    padding-top: 1%;
+    margin-left: 5%;
+}
+
+.titulo {
+    font-family: sans-serif;
+    font-size: 55px;
+    color: whitesmoke;
+    text-shadow: 5px 5px black;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area {
+    border: none;
+    color: whitesmoke;
+    margin-top: 90px;
+    text-transform: lowercase;
+    background: none;
+}
+
+::placeholder {
+    color: darkgray;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje {
+    background-image: url(images/spide.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: rgb(253, 221, 221);
+    margin-left: 250px;
+    margin-top: 20px;
+    padding: 115px 20px;
+    position: absolute;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.informacion {
+    color: darkgray;
+    font-size: 14px;
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+button {
+    font-size: 20px;
+}
+
+.btn-encriptar {
+    background-color: darkred;
+    box-shadow: whitesmoke;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-family: sans-serif;
+    cursor: pointer;
+    height: 55px;
+    width: 260px;
+    text-align: center;
+}
+
+.btn-encriptar:hover {
+    transform: scale(1.1);
+}
+
+.btn-desencriptar {
+    background-color: darkred;
+    box-shadow: whitesmoke;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-family: sans-serif;
+    cursor: pointer;
+    height: 55px;
+    width: 260px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.btn-desencriptar:hover {
+    transform: scale(1.1);
+}
+
+
+.btn-copiar {
+    background-color: darkred;
+    box-shadow: white;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-family: sans-serif;
+    cursor: pointer;
+    height: 55px;
+    width: 260px;
+    position: absolute;
+    margin: 630px 310px 0;
+}
+
+.btn-copiar:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0px 40px;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.redes-container {
+    position: absolute;
+    right: 2em;
+    top: 10px;
+}
+
+.redes-icons {
+    margin-left: 5px;
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        overflow-x: hidden;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .logo {
+        margin-left: 2%;
+    }
+
+    main {
+        margin-left: 16px;
+        display: block;
+        text-align: center;
+    }
+
+    .text-area {
+        width: 90%;
+    }
+
+    .botones {
+        display: block;
+        margin: 18px auto;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    .btn-encriptar {
+        height: 55px;
+        margin: 0 15%;
+    }
+
+    .btn-desencriptar {
+        height: 55px;
+        margin: 10px 15%;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mensaje {
+        margin: 0 2%;
+        padding: 20px;
+        position: relative;
+        height: 600px;
+    }
+
+    .btn-copiar {
+        height: 55px;
+        width: 260px;
+        margin: 0;
+        position: relative;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .redes-container {
+        position: relative;
+        right: 0;
+        bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+    * {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 130%;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        padding-top: 2%;
+    }
+
+    main {
+        margin-left: 16px;
+        display: block;
+        text-align: center;
+    }
+
+    .botones {
+        justify-content: center;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mensaje {
+        margin: 0 2%;
+        padding: 0 175px;
+        position: relative;
+        width: 10px;
+        height: 600px;
+    }
+
+    .btn-copiar {
+        height: 55px;
+        width: 260px;
+        margin: 0;
+        position: relative;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .redes-container {
+        position: relative;
+        right: 0;
+        bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .titulo {
+        left: 25%;
+    }
+
+    .text-area {
+        padding: 0 150px;
+    }
+
+    .mensaje {
+        margin-left: 18%;
+    }
+
+    .btn-copiar {
+        margin: 640px 22.5% 0;
+    }
+}

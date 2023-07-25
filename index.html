@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body>
+        <header>
+            <a href="#">
+                <img src="images/logo.png" alt="">
+                <h1>
+                    <a class="titulo">Encriptador de Texto</a>
+                </h1>
+            </a>
+        </header>
+        <main>
+            <section>
+            <!-- texto y botones para encriptar y desencriptar-->
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Solo letras minusculas y sin acentos
+                </h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+            </section>
+            <!--textop y boton copiar-->
+            <section class="contenedor">
+                <textarea class="mensaje" cols="20" rows="9" readonly></textarea>
+                <div>
+                    <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+                </div>
+            </section>
+        </main>
+            <footer>
+                <h2 class="footer-text">&copy; 2023 by Saul Dael Guzman Hernandez</h2>
+                <div class="redes-container">
+                    <a href="https://github.com/SaulDael" target="_blank"><i class="redes-icons fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dael-guzman-sdgh2001/" target="_blank"><i class="redes-icons fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+       <script src="script.js"></script>
+      </body>
+</html>
